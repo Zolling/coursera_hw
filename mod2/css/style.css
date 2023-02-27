@@ -10,6 +10,7 @@ h1 {
 }
 
 div {
+	display: inline-block;
 	box-sizing: border-box;
 	background-color: darkgrey;
 	border: 1px solid black;
@@ -57,15 +58,16 @@ h3 {
 		margin-bottom: 2.5%;
 	}
 
-	.md_wide {
+	.md:nth-last-child(1) {
 		float: left;
 		width: 95%;
+		margin-right: 2.5%;
 	}
 }
 
 @media (max-width: 767px) {
 	.sm {
 		width: 95%;
-		margin-bottom: 2.5%;
+		margin: 0 2.5% 2.5% 2.5%;
 	}
 }
